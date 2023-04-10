@@ -16,6 +16,6 @@ if S%2==0:
     P=S/6
     K=(P+C)*2
     print(P,K,C,P+K+C)
-    print(f"{S}-> {math.ceil(P)} {math.ceil(K)} {math.ceil(C)}")
+    print(f"{S}-> {P} {K} {C}")
 else:
     print("Невозможно")

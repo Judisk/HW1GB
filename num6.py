@@ -8,13 +8,17 @@
 
 """
 
-ticket = input(" Введите номер билета")
-
-fisrt=int(ticket[0])+int(ticket[1])+int(ticket[2])
-second=int(ticket[3])+int(ticket[4])+int(ticket[5])
-print(fisrt)
+ticket = input(" Введите номер билета ")
+i=0
+first = 0
+second = 0
+while i < 3:
+    first+=int(ticket[i])
+    second+=int(ticket[i+3])
+    i+=1
+print(first)
 print(second)
-if fisrt==second:
+if first==second:
     print("yes")
 else:
     print("no")

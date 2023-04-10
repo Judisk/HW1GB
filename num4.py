@@ -9,10 +9,13 @@
 """
 import math
 
-S=int(input(" Введите общее кол-во журавликов"))
+S=int(input(" Введите общее кол-во журавликов "))
 
-K= S*0.66
-C=S*0.16
-P=S*0.16
-
-print(f"{S}-> {math.ceil(P)} {math.ceil(K)} {math.ceil(C)}")
+if S%2==0:
+    C=S/6
+    P=S/6
+    K=(P+C)*2
+    print(P,K,C,P+K+C)
+    print(f"{S}-> {math.ceil(P)} {math.ceil(K)} {math.ceil(C)}")
+else:
+    print("Невозможно")
